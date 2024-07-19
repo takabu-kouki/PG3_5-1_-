@@ -36,8 +36,6 @@ void StageScene::Update(char* keys, char* preKeys)
 void StageScene::Draw()
 {
 	Novice::DrawBox(0, 0, 1280, 720, 0.0f, 255, kFillModeSolid);
-	Novice::DrawBox(0, 0, 500, 320, 0.0f,50,kFillModeSolid);
-	Novice::DrawBox(0, 0, 500, 120, 0.0f,10,kFillModeSolid);
-
-
+    player_->Draw();
+    enemy_->Draw();
 }
